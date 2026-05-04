@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Item from "@/components/Item";
 import ScrollWrapper from "@/components/ui/scroll/ScrollWrapper";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
         experience="Developed the modern frontend for a CS:GO skin marketplace, implementing a seamless user interface for buying and selling assets. I was responsible for integrating the client's existing API to handle real-time inventory and market data."
         />
     </ScrollWrapper>
+    <Analytics/>
     </>
   );
 }
